@@ -6,6 +6,9 @@
   <title>A Invenção do Dia Azul | Luísa Rodrigues</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Snipcart Stylesheet -->
+  <link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css" />
 </head>
 <body>
 
@@ -23,15 +26,26 @@
         <li><a href="#home" class="active">HOME</a></li>
         <li><a href="#gallery">GALLERY</a></li>
         <li><a href="#process">PROCESS</a></li>
+        <li><a href="#kits">SHOP</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
-      <div class="lang-toggle">
-        <a href="index.html" class="lang-btn active">EN</a>
-        <span class="lang-divider">|</span>
-        <a href="index-pt.html" class="lang-btn">PT</a>
-        <span class="lang-divider">|</span>
-        <a href="index-es.html" class="lang-btn">ES</a>
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <a href="index.html" class="lang-btn active">EN</a>
+          <span class="lang-divider">|</span>
+          <a href="index-pt.html" class="lang-btn">PT</a>
+          <span class="lang-divider">|</span>
+          <a href="index-es.html" class="lang-btn">ES</a>
+        </div>
+        <!-- Snipcart Cart Button -->
+        <button class="snipcart-checkout cart-btn" aria-label="Shopping cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="snipcart-items-count cart-count">0</span>
+        </button>
       </div>
     </div>
   </nav>
@@ -223,6 +237,7 @@
           </div>
           <div class="kit-info">
             <h3 class="kit-title">STARTER KIT</h3>
+            <p class="kit-price">&euro;25.00</p>
             <p class="kit-subtitle">Perfect for first-time sun prints.<br>Everything you need to create your first cyanotypes:</p>
             <ul class="kit-features">
               <li>Solutions A and B (2x15ml)</li>
@@ -234,7 +249,17 @@
               <li>Glass and mdf support</li>
               <li>Binder clips</li>
             </ul>
-            <a href="#contact" class="kit-btn">INQUIRE ABOUT THIS KIT</a>
+            <button class="kit-btn snipcart-add-item"
+              data-item-id="kit-starter"
+              data-item-price="25.00"
+              data-item-url="/index.html"
+              data-item-name="Starter Kit"
+              data-item-description="Cyanotype Starter Kit — 5 sheets, solutions, brush, guide &amp; more"
+              data-item-image="images/contact-bg.jpeg"
+              data-item-weight="500"
+              data-item-shippable="true">
+              ADD TO CART &mdash; &euro;25
+            </button>
           </div>
         </div>
 
@@ -250,6 +275,7 @@
           </div>
           <div class="kit-info">
             <h3 class="kit-title">COMPLETE KIT</h3>
+            <p class="kit-price">&euro;45.00</p>
             <p class="kit-subtitle">Our most popular option.<br>Create multiple unique prints with professional materials:</p>
             <ul class="kit-features">
               <li>Solutions A and B (2x25ml)</li>
@@ -261,7 +287,17 @@
               <li>Glass and mdf support</li>
               <li>Binder clips</li>
             </ul>
-            <a href="#contact" class="kit-btn">INQUIRE ABOUT THIS KIT</a>
+            <button class="kit-btn snipcart-add-item"
+              data-item-id="kit-complete"
+              data-item-price="45.00"
+              data-item-url="/index.html"
+              data-item-name="Complete Kit"
+              data-item-description="Cyanotype Complete Kit — 10 sheets, professional materials, guide &amp; more"
+              data-item-image="images/gallery-4.jpeg"
+              data-item-weight="800"
+              data-item-shippable="true">
+              ADD TO CART &mdash; &euro;45
+            </button>
           </div>
         </div>
 
@@ -276,6 +312,7 @@
           </div>
           <div class="kit-info">
             <h3 class="kit-title">PRO KIT</h3>
+            <p class="kit-price">&euro;75.00</p>
             <p class="kit-subtitle">For artists and photographers ready to explore alternative processes at a professional level.</p>
             <ul class="kit-features">
               <li>Solutions A and B (2x25ml)</li>
@@ -291,7 +328,17 @@
               <li>Glass and mdf support</li>
               <li>Binder clips</li>
             </ul>
-            <a href="#contact" class="kit-btn">INQUIRE ABOUT THIS KIT</a>
+            <button class="kit-btn snipcart-add-item"
+              data-item-id="kit-pro"
+              data-item-price="75.00"
+              data-item-url="/index.html"
+              data-item-name="Pro Kit"
+              data-item-description="Cyanotype Pro Kit — 20 sheets, cotton fabric, hake brush, specialty items &amp; more"
+              data-item-image="images/artist-portrait.jpeg"
+              data-item-weight="1200"
+              data-item-shippable="true">
+              ADD TO CART &mdash; &euro;75
+            </button>
           </div>
         </div>
       </div>
@@ -386,5 +433,19 @@
   </section>
 
   <script src="script.js"></script>
+
+  <!-- Snipcart Script -->
+  <!-- IMPORTANT: Replace YOUR_SNIPCART_API_KEY below with your real public API key from https://app.snipcart.com -->
+  <div id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY" data-config-modal-style="side" data-currency="eur" hidden>
+    <address-fields name="shipping-address">
+      <div>
+        <fieldset name="nif">
+          <label for="nif">NIF / VAT Number (optional)</label>
+          <input name="nif" type="text">
+        </fieldset>
+      </div>
+    </address-fields>
+  </div>
+  <script async src="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.js"></script>
 </body>
 </html>

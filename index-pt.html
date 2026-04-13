@@ -6,6 +6,9 @@
   <title>A Invenção do Dia Azul | Luísa Rodrigues</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Snipcart Stylesheet -->
+  <link rel="preconnect" href="https://app.snipcart.com">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.css" />
 </head>
 <body>
 
@@ -23,15 +26,26 @@
         <li><a href="#home" class="active">INÍCIO</a></li>
         <li><a href="#gallery">GALERIA</a></li>
         <li><a href="#process">PROCESSO</a></li>
+        <li><a href="#kits">LOJA</a></li>
         <li><a href="#about">SOBRE</a></li>
         <li><a href="#contact">CONTACTO</a></li>
       </ul>
-      <div class="lang-toggle">
-        <a href="index.html" class="lang-btn">EN</a>
-        <span class="lang-divider">|</span>
-        <a href="index-pt.html" class="lang-btn active">PT</a>
-        <span class="lang-divider">|</span>
-        <a href="index-es.html" class="lang-btn">ES</a>
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <a href="index.html" class="lang-btn">EN</a>
+          <span class="lang-divider">|</span>
+          <a href="index-pt.html" class="lang-btn active">PT</a>
+          <span class="lang-divider">|</span>
+          <a href="index-es.html" class="lang-btn">ES</a>
+        </div>
+        <!-- Snipcart Cart Button -->
+        <button class="snipcart-checkout cart-btn" aria-label="Carrinho de compras">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="snipcart-items-count cart-count">0</span>
+        </button>
       </div>
     </div>
   </nav>
@@ -222,6 +236,7 @@
           </div>
           <div class="kit-info">
             <h3 class="kit-title">KIT INICIANTE</h3>
+            <p class="kit-price">&euro;25,00</p>
             <p class="kit-subtitle">Perfeito para primeiras impressões solares.<br>Tudo o que precisa para criar as suas primeiras cianotipias:</p>
             <ul class="kit-features">
               <li>Soluções A e B (2x15ml)</li>
@@ -233,7 +248,17 @@
               <li>Suporte de vidro e mdf</li>
               <li>Molas</li>
             </ul>
-            <a href="#contact" class="kit-btn">SABER MAIS SOBRE ESTE KIT</a>
+            <button class="kit-btn snipcart-add-item"
+              data-item-id="kit-starter"
+              data-item-price="25.00"
+              data-item-url="/index-pt.html"
+              data-item-name="Kit Iniciante"
+              data-item-description="Kit de Cianotipia Iniciante — 5 folhas, soluções, pincel, guia e mais"
+              data-item-image="images/contact-bg.jpeg"
+              data-item-weight="500"
+              data-item-shippable="true">
+              ADICIONAR &mdash; &euro;25
+            </button>
           </div>
         </div>
 
@@ -249,6 +274,7 @@
           </div>
           <div class="kit-info">
             <h3 class="kit-title">KIT COMPLETO</h3>
+            <p class="kit-price">&euro;45,00</p>
             <p class="kit-subtitle">A nossa opção mais popular.<br>Crie múltiplas impressões únicas com materiais profissionais:</p>
             <ul class="kit-features">
               <li>Soluções A e B (2x25ml)</li>
@@ -260,7 +286,17 @@
               <li>Suporte de vidro e mdf</li>
               <li>Molas</li>
             </ul>
-            <a href="#contact" class="kit-btn">SABER MAIS SOBRE ESTE KIT</a>
+            <button class="kit-btn snipcart-add-item"
+              data-item-id="kit-complete"
+              data-item-price="45.00"
+              data-item-url="/index-pt.html"
+              data-item-name="Kit Completo"
+              data-item-description="Kit de Cianotipia Completo — 10 folhas, materiais profissionais, guia e mais"
+              data-item-image="images/gallery-4.jpeg"
+              data-item-weight="800"
+              data-item-shippable="true">
+              ADICIONAR &mdash; &euro;45
+            </button>
           </div>
         </div>
 
@@ -275,6 +311,7 @@
           </div>
           <div class="kit-info">
             <h3 class="kit-title">KIT PRO</h3>
+            <p class="kit-price">&euro;75,00</p>
             <p class="kit-subtitle">Para artistas e fotógrafos prontos a explorar processos alternativos a nível profissional.</p>
             <ul class="kit-features">
               <li>Soluções A e B (2x25ml)</li>
@@ -290,7 +327,17 @@
               <li>Suporte de vidro e mdf</li>
               <li>Molas</li>
             </ul>
-            <a href="#contact" class="kit-btn">SABER MAIS SOBRE ESTE KIT</a>
+            <button class="kit-btn snipcart-add-item"
+              data-item-id="kit-pro"
+              data-item-price="75.00"
+              data-item-url="/index-pt.html"
+              data-item-name="Kit Pro"
+              data-item-description="Kit de Cianotipia Pro — 20 folhas, tecido, pincel hake, materiais especiais e mais"
+              data-item-image="images/artist-portrait.jpeg"
+              data-item-weight="1200"
+              data-item-shippable="true">
+              ADICIONAR &mdash; &euro;75
+            </button>
           </div>
         </div>
       </div>
@@ -385,5 +432,18 @@
   </section>
 
   <script src="script.js"></script>
+
+  <!-- Snipcart Script -->
+  <div id="snipcart" data-api-key="YOUR_SNIPCART_API_KEY" data-config-modal-style="side" data-currency="eur" hidden>
+    <address-fields name="shipping-address">
+      <div>
+        <fieldset name="nif">
+          <label for="nif">NIF / Número de Contribuinte (opcional)</label>
+          <input name="nif" type="text">
+        </fieldset>
+      </div>
+    </address-fields>
+  </div>
+  <script async src="https://cdn.snipcart.com/themes/v3.7.1/default/snipcart.js"></script>
 </body>
 </html>
