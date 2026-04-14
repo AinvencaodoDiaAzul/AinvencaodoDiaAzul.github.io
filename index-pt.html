@@ -434,7 +434,15 @@
   <script src="script.js"></script>
 
   <!-- Snipcart Script -->
-  <div id="snipcart" data-api-key="NzkxNzU5MmItOGNjNS00NWJkLTk2MTgtZDAzYzJmMTY4YjM1NjM5MTE3MDAxOTk4MDE1Mjc0" data-config-modal-style="side" data-currency="eur" hidden>
+  <script>
+    window.SnipcartSettings = {
+      publicApiKey: "NzkxNzU5MmItOGNjNS00NWJkLTk2MTgtZDAzYzJmMTY4YjM1NjM5MTE3MDAxOTk4MDE1Mjc0",
+      loadStrategy: "on-user-interaction",
+      modalStyle: "side",
+      currency: "eur"
+    };
+  </script>
+  <div id="snipcart" hidden>
     <address-fields name="shipping-address">
       <div>
         <fieldset name="nif">
