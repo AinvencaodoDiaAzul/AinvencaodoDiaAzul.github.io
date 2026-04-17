@@ -78,11 +78,37 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
+      const hash = anchor.getAttribute('href');
+
+      // Skip Snipcart's own routes (e.g. #/cart, #/checkout) — let Snipcart handle them
+      if (hash.startsWith('#/')) return;
+
       e.preventDefault();
-      const target = document.querySelector(anchor.getAttribute('href'));
+
+      // If the Snipcart overlay is open (e.g. after placing an order), close it
+      // so the user can return to the homepage.
+      if (window.Snipcart && window.Snipcart.api && window.Snipcart.api.theme) {
+        try { window.Snipcart.api.theme.cart.close(); } catch (err) { /* ignore */ }
+      }
+
+      const target = document.querySelector(hash);
       if (target) {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Update the URL hash so Snipcart's hash-based state is cleared too.
+        history.replaceState(null, '', hash);
       }
+    });
+  });
+
+  // --- Snipcart: auto-close cart after an order is completed ---
+  document.addEventListener('snipcart.ready', () => {
+    if (!window.Snipcart) return;
+    Snipcart.events.on('order.completed', () => {
+      try { Snipcart.api.theme.cart.close(); } catch (err) { /* ignore */ }
+      // Clear any leftover Snipcart hash (e.g. #/order-complete) and
+      // scroll back to the top of the page.
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
 
