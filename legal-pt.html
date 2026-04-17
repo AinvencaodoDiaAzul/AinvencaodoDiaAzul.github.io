@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informação Legal | A Invenção do Dia Azul</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    .legal-hero {
+      padding: 120px 0 40px;
+      background: #1a1a2e;
+      text-align: center;
+    }
+    .legal-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: #e8e0d5;
+      letter-spacing: 0.1em;
+    }
+    .legal-hero p {
+      color: #9bb5c0;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      margin-top: 0.5rem;
+    }
+    .legal-tabs {
+      background: #f8f5f0;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0;
+      position: sticky;
+      top: 70px;
+      z-index: 100;
+    }
+    .legal-tabs a {
+      padding: 14px 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      color: #666;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .legal-tabs a:hover {
+      color: #2c5f6e;
+      border-bottom-color: #2c5f6e;
+    }
+    .legal-content {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 30px 80px;
+    }
+    .legal-section {
+      margin-bottom: 60px;
+      scroll-margin-top: 130px;
+    }
+    .legal-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 400;
+      color: #1a1a2e;
+      margin-bottom: 6px;
+      letter-spacing: 0.05em;
+    }
+    .legal-section .section-divider {
+      width: 50px;
+      height: 1px;
+      background: #9bb5c0;
+      margin-bottom: 22px;
+    }
+    .legal-section h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #2c5f6e;
+      margin: 22px 0 8px;
+    }
+    .legal-section p, .legal-section li {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: #444;
+    }
+    .legal-section ul {
+      padding-left: 20px;
+      margin: 8px 0;
+    }
+    .legal-section ul li {
+      margin-bottom: 4px;
+    }
+    .legal-section a {
+      color: #2c5f6e;
+    }
+    .info-box {
+      background: #edf4f7;
+      border-left: 3px solid #9bb5c0;
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 4px 4px 0;
+    }
+    .info-box p {
+      margin: 2px 0;
+    }
+    .reclamacoes-box {
+      background: #fff8f0;
+      border: 1px solid #e0c8a0;
+      border-left: 4px solid #c0892e;
+      padding: 20px 24px;
+      margin: 30px 0;
+      border-radius: 0 4px 4px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .reclamacoes-box .rec-icon {
+      font-size: 2rem;
+      flex-shrink: 0;
+    }
+    .reclamacoes-box p {
+      margin: 3px 0;
+      font-size: 0.85rem !important;
+    }
+    .reclamacoes-box a {
+      font-weight: 600;
+      color: #c0892e !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegação -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index-pt.html" class="nav-logo">
+        <img src="images/kit-complete.jpeg" alt="Luísa Rodrigues" class="logo-img">
+        <span class="logo-text"><span class="logo-blue">a invenção</span> do dia azul</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index-pt.html#home">INÍCIO</a></li>
+        <li><a href="index-pt.html#gallery">GALERIA</a></li>
+        <li><a href="index-pt.html#process">PROCESSO</a></li>
+        <li><a href="index-pt.html#kits">LOJA</a></li>
+        <li><a href="index-pt.html#about">SOBRE</a></li>
+        <li><a href="index-pt.html#contact">CONTACTO</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <a href="legal-en.html" class="lang-btn">EN</a>
+          <span class="lang-divider">|</span>
+          <a href="legal-pt.html" class="lang-btn active">PT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="legal-hero">
+    <h1>Informação Legal</h1>
+    <p>PRIVACIDADE · TERMOS · DEVOLUÇÕES · ENVIOS · COOKIES</p>
+  </div>
+
+  <div class="legal-tabs">
+    <a href="#privacidade">Política de Privacidade</a>
+    <a href="#termos">Termos e Condições</a>
+    <a href="#devolucoes">Devoluções e Reembolsos</a>
+    <a href="#envios">Política de Envio</a>
+    <a href="#cookies">Política de Cookies</a>
+  </div>
+
+  <div class="legal-content">
+
+    <div class="info-box">
+      <p><strong>Entidade responsável:</strong> Luísa Rodrigues</p>
+      <p><strong>NIPC:</strong> 155069683</p>
+      <p><strong>Morada:</strong> Rua do Cruzeiro 217, 4910-253 Moledo, Portugal</p>
+      <p><strong>Email:</strong> <a href="mailto:rodrigues.luisas@gmail.com">rodrigues.luisas@gmail.com</a></p>
+    </div>
+
+    <div class="reclamacoes-box">
+      <div class="rec-icon">📋</div>
+      <div>
+        <p><strong>Livro de Reclamações Eletrónico</strong></p>
+        <p>Nos termos do Decreto-Lei n.º 74/2017, o consumidor pode apresentar reclamação através do Livro de Reclamações Eletrónico.</p>
+        <p><a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener">www.livroreclamacoes.pt →</a></p>
+      </div>
+    </div>
+
+    <!-- POLÍTICA DE PRIVACIDADE -->
+    <div class="legal-section" id="privacidade">
+      <h2>Política de Privacidade</h2>
+      <div class="section-divider"></div>
+      <p><em>Última atualização: abril de 2026</em></p>
+
+      <h3>1. Responsável pelo Tratamento</h3>
+      <p>A Invenção do Dia Azul é gerida por Luísa Rodrigues (NIPC 155069683), Rua do Cruzeiro 217, 4910-253 Moledo, Portugal. Somos o responsável pelo tratamento dos dados pessoais recolhidos através deste website.</p>
+
+      <h3>2. Dados Recolhidos</h3>
+      <p>Ao efetuar uma encomenda, recolhemos os seguintes dados pessoais através do processo de checkout:</p>
+      <ul>
+        <li>Nome completo</li>
+        <li>Morada de entrega</li>
+        <li>Endereço de e-mail</li>
+        <li>Número de telefone (opcional)</li>
+        <li>NIF (se fornecido)</li>
+        <li>Dados de pagamento (tratados diretamente pela Mollie — nunca acedemos aos dados do seu cartão)</li>
+      </ul>
+
+      <h3>3. Finalidades do Tratamento</h3>
+      <ul>
+        <li><strong>Execução da encomenda</strong> — para processar e enviar a sua encomenda (base legal: execução de contrato, Art. 6.º, n.º 1, al. b) do RGPD)</li>
+        <li><strong>Obrigações fiscais e contabilísticas</strong> — conforme exigido pela legislação fiscal portuguesa (base legal: obrigação legal, Art. 6.º, n.º 1, al. c) do RGPD)</li>
+        <li><strong>Apoio ao cliente</strong> — para responder a questões sobre a sua encomenda (base legal: interesse legítimo, Art. 6.º, n.º 1, al. f) do RGPD)</li>
+      </ul>
+
+      <h3>4. Subcontratantes</h3>
+      <p>Partilhamos os seus dados com os seguintes subcontratantes, exclusivamente para executar a sua encomenda:</p>
+      <ul>
+        <li><strong>Snipcart</strong> (gestão do carrinho e encomendas) — <a href="https://snipcart.com/privacy-policy" target="_blank" rel="noopener">Política de privacidade</a></li>
+        <li><strong>Mollie</strong> (processamento de pagamentos) — <a href="https://www.mollie.com/pt/privacy" target="_blank" rel="noopener">Política de privacidade</a></li>
+        <li><strong>Transportadora</strong> (CTT ou equivalente) — o seu nome e morada são partilhados para efeitos de entrega</li>
+      </ul>
+      <p>Não vendemos, cedemos nem partilhamos os seus dados com terceiros para quaisquer outros fins.</p>
+
+      <h3>5. Conservação dos Dados</h3>
+      <p>Os dados de encomendas e faturas são conservados durante 10 anos, conforme exigido pela legislação fiscal portuguesa. Os dados utilizados exclusivamente para entrega são eliminados após confirmação da receção.</p>
+
+      <h3>6. Os Seus Direitos</h3>
+      <p>Ao abrigo do RGPD, tem direito a:</p>
+      <ul>
+        <li>Aceder aos seus dados pessoais</li>
+        <li>Solicitar a correção de dados inexatos</li>
+        <li>Solicitar o apagamento (onde não seja impedido por obrigações legais)</li>
+        <li>Opor-se ao tratamento com base em interesse legítimo</li>
+        <li>Solicitar a portabilidade dos dados</li>
+      </ul>
+      <p>Para exercer estes direitos, contacte-nos através de <a href="mailto:rodrigues.luisas@gmail.com">rodrigues.luisas@gmail.com</a>. Tem também o direito de apresentar reclamação junto da autoridade de proteção de dados: <a href="https://www.cnpd.pt" target="_blank" rel="noopener">CNPD — Comissão Nacional de Proteção de Dados</a>.</p>
+    </div>
+
+    <!-- TERMOS E CONDIÇÕES -->
+    <div class="legal-section" id="termos">
+      <h2>Termos e Condições</h2>
+      <div class="section-divider"></div>
+      <p><em>Última atualização: abril de 2026</em></p>
+
+      <h3>1. Identificação do Vendedor</h3>
+      <p>Estes termos regem as compras efetuadas na A Invenção do Dia Azul, gerida por Luísa Rodrigues (NIPC 155069683), Rua do Cruzeiro 217, 4910-253 Moledo, Portugal. E-mail: <a href="mailto:rodrigues.luisas@gmail.com">rodrigues.luisas@gmail.com</a>.</p>
+
+      <h3>2. Produtos</h3>
+      <p>Todos os kits são feitos à mão e podem apresentar ligeiras variações em relação às fotografias. Esta é uma característica dos produtos artesanais, não um defeito. As descrições e conteúdos dos produtos são os indicados em cada página de produto no momento da compra.</p>
+
+      <h3>3. Preços e IVA</h3>
+      <p>Todos os preços são apresentados em euros (€) e incluem o IVA à taxa aplicável. Os custos de envio são acrescidos e apresentados no checkout antes da confirmação do pagamento.</p>
+
+      <h3>4. Realização da Encomenda</h3>
+      <p>Ao clicar em "Adicionar ao Carrinho" e concluir o checkout, o consumidor formula uma proposta vinculativa de compra. O contrato é celebrado quando recebe o e-mail de confirmação da encomenda. Reservamo-nos o direito de recusar encomendas (por exemplo, em caso de indisponibilidade de produto).</p>
+
+      <h3>5. Pagamento</h3>
+      <p>O pagamento é processado de forma segura pela Mollie. Aceitamos os principais cartões de débito e crédito, MB WAY e Multibanco. O pagamento é cobrado no momento da encomenda.</p>
+
+      <h3>6. Direito de Livre Resolução (14 dias)</h3>
+      <p>Nos termos da Diretiva 2011/83/UE e do DL n.º 24/2014 (Lei dos Contratos Celebrados à Distância), o consumidor tem o direito de resolver o contrato no prazo de <strong>14 dias de calendário</strong> a contar da receção da encomenda, sem necessidade de indicar qualquer motivo. Consulte a secção Devoluções e Reembolsos para saber como exercer este direito.</p>
+
+      <h3>7. Resolução de Litígios</h3>
+      <p>Procuramos resolver todos os litígios de forma amigável. Caso não seja possível chegar a acordo, pode recorrer à plataforma europeia de resolução de litígios em linha: <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a>. Os consumidores portugueses podem também recorrer aos centros de arbitragem de conflitos de consumo reconhecidos.</p>
+
+      <h3>8. Lei Aplicável</h3>
+      <p>Estes termos são regidos pelo direito português. Os tribunais de Viana do Castelo têm competência para dirimir quaisquer litígios, sem prejuízo das disposições imperativas de proteção do consumidor do país de residência do consumidor.</p>
+    </div>
+
+    <!-- DEVOLUÇÕES E REEMBOLSOS -->
+    <div class="legal-section" id="devolucoes">
+      <h2>Devoluções e Reembolsos</h2>
+      <div class="section-divider"></div>
+
+      <h3>Direito de Livre Resolução (14 dias)</h3>
+      <p>Pode devolver qualquer artigo no prazo de <strong>14 dias de calendário</strong> a contar da sua receção, por qualquer motivo, ao abrigo do direito europeu do consumidor (Diretiva 2011/83/UE).</p>
+
+      <h3>Como Devolver</h3>
+      <ul>
+        <li>Envie um e-mail para <a href="mailto:rodrigues.luisas@gmail.com">rodrigues.luisas@gmail.com</a> no prazo de 14 dias após a entrega, indicando o número da encomenda e a intenção de devolução.</li>
+        <li>Responderemos com as instruções de devolução no prazo de 2 dias úteis.</li>
+        <li>Devolva o artigo nas suas condições e embalagem originais.</li>
+        <li><strong>Os custos de envio da devolução são da responsabilidade do cliente.</strong></li>
+      </ul>
+
+      <h3>Reembolsos</h3>
+      <p>Após receção e inspeção do artigo devolvido, emitiremos o reembolso integral do valor do produto no prazo de <strong>14 dias</strong>, através do mesmo método de pagamento utilizado na compra original. Os custos de envio da encomenda original só são reembolsados em caso de erro nosso ou produto com defeito.</p>
+
+      <h3>Artigos Danificados ou com Defeito</h3>
+      <p>Se a sua encomenda chegar danificada ou com defeito, contacte-nos por e-mail no prazo de 48 horas após a receção, com fotografia do problema. Procederemos à substituição ou ao reembolso integral, incluindo os custos de devolução, sem encargos para o cliente.</p>
+
+      <h3>Exceções</h3>
+      <p>Encomendas personalizadas não podem ser devolvidas, salvo se apresentarem defeito.</p>
+    </div>
+
+    <!-- POLÍTICA DE ENVIO -->
+    <div class="legal-section" id="envios">
+      <h2>Política de Envio</h2>
+      <div class="section-divider"></div>
+
+      <h3>Prazo de Preparação</h3>
+      <p>As encomendas são preparadas e expedidas no prazo de <strong>2 a 3 dias úteis</strong> após confirmação do pagamento. Receberá um e-mail de confirmação de envio quando a encomenda sair do nosso atelier.</p>
+
+      <h3>Prazos de Entrega</h3>
+      <ul>
+        <li><strong>Portugal continental e ilhas:</strong> 3 a 5 dias úteis</li>
+        <li><strong>Países da UE:</strong> 7 a 14 dias úteis</li>
+        <li><strong>Resto do mundo:</strong> 14 a 21 dias úteis (quando disponível)</li>
+      </ul>
+      <p>Estes prazos são estimativas fornecidas pelas transportadoras e não são garantidos. Podem ocorrer atrasos em períodos de maior procura ou devido a processamento alfandegário.</p>
+
+      <h3>Custos de Envio</h3>
+      <p>Os custos de envio são calculados no checkout com base na morada de entrega e no peso da encomenda. O valor exato é apresentado antes da confirmação do pagamento.</p>
+
+      <h3>Rastreio</h3>
+      <p>Sempre que disponível, o número de rastreio será incluído no e-mail de confirmação de envio.</p>
+
+      <h3>Encomendas Perdidas ou Não Entregues</h3>
+      <p>Se a sua encomenda não chegar dentro do prazo estimado, contacte-nos através de <a href="mailto:rodrigues.luisas@gmail.com">rodrigues.luisas@gmail.com</a> e iniciaremos uma investigação junto da transportadora.</p>
+    </div>
+
+    <!-- POLÍTICA DE COOKIES -->
+    <div class="legal-section" id="cookies">
+      <h2>Política de Cookies</h2>
+      <div class="section-divider"></div>
+
+      <h3>O Que São Cookies</h3>
+      <p>Os cookies são pequenos ficheiros de texto guardados pelo seu navegador quando visita um website. São utilizados para manter a funcionalidade entre páginas.</p>
+
+      <h3>Cookies Que Utilizamos</h3>
+      <p>Este website utiliza apenas <strong>cookies funcionais</strong> necessários para o correto funcionamento do carrinho de compras:</p>
+      <ul>
+        <li><strong>Cookies de sessão Snipcart</strong> — guardam o conteúdo do seu carrinho durante a navegação e no checkout. São eliminados quando fecha o navegador ou quando a sessão expira.</li>
+      </ul>
+      <p>Não utilizamos cookies de publicidade, rastreamento ou análise. Este website não instala cookies de marketing de terceiros.</p>
+
+      <h3>Gestão de Cookies</h3>
+      <p>Pode desativar os cookies nas definições do seu navegador. Contudo, a desativação dos cookies funcionais impedirá o funcionamento do carrinho de compras. Para mais informações sobre como gerir cookies, consulte a ajuda do seu navegador.</p>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">
+        &copy; 2026 A Invenção do Dia Azul &mdash; Luísa Rodrigues &nbsp;|&nbsp; NIPC 155069683
+        &nbsp;|&nbsp; <a href="legal-pt.html" style="color:#9bb5c0;">Informação Legal</a>
+        &nbsp;|&nbsp; <a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener" style="color:#9bb5c0;">Livro de Reclamações</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
